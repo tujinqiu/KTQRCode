@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "KTQRCodeController.h"
 
-@interface ViewController ()
+@interface ViewController ()<KTQRCodeControllerDelegate>
 
 @end
 
@@ -25,5 +26,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)tapQRButton:(id)sender {
+    KTQRCodeController *nav = [KTQRCodeController QRCodeController];
+    nav.QRCodeDelegate = self;
+    [self presentViewController:nav animated:YES completion:nil];
+}
+
+- (void)QRCodeController:(KTQRCodeController *)QRCodeController didScanResult:(NSString *)result
+{
+    [QRCodeController dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"result:%@", result);
+}
 
 @end

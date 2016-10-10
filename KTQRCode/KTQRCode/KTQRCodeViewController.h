@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  KTQRCodeViewController.h
 //  KTQRCode
 //
 //  Created by whkevin on 2016/10/10.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface KTQRCodeViewController : UIViewController
 
 @end
-

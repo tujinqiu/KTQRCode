@@ -15,6 +15,13 @@
 		D02A28DE1DAB1714005406DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02A28DC1DAB1714005406DD /* LaunchScreen.storyboard */; };
 		D02A28E91DAB1714005406DD /* KTQRCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D02A28E81DAB1714005406DD /* KTQRCodeTests.m */; };
 		D02A28F41DAB1714005406DD /* KTQRCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D02A28F31DAB1714005406DD /* KTQRCodeUITests.m */; };
+		D02A29031DAB17AF005406DD /* KTQRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02A29021DAB17AF005406DD /* KTQRCode.storyboard */; };
+		D02A29061DAB17D1005406DD /* KTQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D02A29051DAB17D1005406DD /* KTQRCodeController.m */; };
+		D02A29091DAB17F4005406DD /* KTQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D02A29081DAB17F4005406DD /* KTQRCodeViewController.m */; };
+		D02A290C1DAB1DAA005406DD /* UIAlertController+Simple.m in Sources */ = {isa = PBXBuildFile; fileRef = D02A290B1DAB1DAA005406DD /* UIAlertController+Simple.m */; };
+		D02A29121DAB3F24005406DD /* KTScanPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D02A29111DAB3F24005406DD /* KTScanPopView.m */; };
+		D02A29141DAB58EA005406DD /* KTQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D02A29131DAB58EA005406DD /* KTQRCode.bundle */; };
+		D02A29171DAB690A005406DD /* KTPreviewLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D02A29161DAB690A005406DD /* KTPreviewLayerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,18 @@
 		D02A28EF1DAB1714005406DD /* KTQRCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KTQRCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02A28F31DAB1714005406DD /* KTQRCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTQRCodeUITests.m; sourceTree = "<group>"; };
 		D02A28F51DAB1714005406DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D02A29021DAB17AF005406DD /* KTQRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KTQRCode.storyboard; sourceTree = "<group>"; };
+		D02A29041DAB17D1005406DD /* KTQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTQRCodeController.h; sourceTree = "<group>"; };
+		D02A29051DAB17D1005406DD /* KTQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTQRCodeController.m; sourceTree = "<group>"; };
+		D02A29071DAB17F4005406DD /* KTQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTQRCodeViewController.h; sourceTree = "<group>"; };
+		D02A29081DAB17F4005406DD /* KTQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTQRCodeViewController.m; sourceTree = "<group>"; };
+		D02A290A1DAB1DAA005406DD /* UIAlertController+Simple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Simple.h"; sourceTree = "<group>"; };
+		D02A290B1DAB1DAA005406DD /* UIAlertController+Simple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Simple.m"; sourceTree = "<group>"; };
+		D02A29101DAB3F24005406DD /* KTScanPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTScanPopView.h; sourceTree = "<group>"; };
+		D02A29111DAB3F24005406DD /* KTScanPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTScanPopView.m; sourceTree = "<group>"; };
+		D02A29131DAB58EA005406DD /* KTQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KTQRCode.bundle; sourceTree = "<group>"; };
+		D02A29151DAB690A005406DD /* KTPreviewLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTPreviewLayerView.h; sourceTree = "<group>"; };
+		D02A29161DAB690A005406DD /* KTPreviewLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTPreviewLayerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +120,7 @@
 		D02A28CD1DAB1713005406DD /* KTQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				D02A29011DAB17A0005406DD /* KTQRCode */,
 				D02A28D11DAB1714005406DD /* AppDelegate.h */,
 				D02A28D21DAB1714005406DD /* AppDelegate.m */,
 				D02A28D41DAB1714005406DD /* ViewController.h */,
@@ -138,6 +158,25 @@
 				D02A28F51DAB1714005406DD /* Info.plist */,
 			);
 			path = KTQRCodeUITests;
+			sourceTree = "<group>";
+		};
+		D02A29011DAB17A0005406DD /* KTQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				D02A29131DAB58EA005406DD /* KTQRCode.bundle */,
+				D02A29021DAB17AF005406DD /* KTQRCode.storyboard */,
+				D02A29041DAB17D1005406DD /* KTQRCodeController.h */,
+				D02A29051DAB17D1005406DD /* KTQRCodeController.m */,
+				D02A29071DAB17F4005406DD /* KTQRCodeViewController.h */,
+				D02A29081DAB17F4005406DD /* KTQRCodeViewController.m */,
+				D02A290A1DAB1DAA005406DD /* UIAlertController+Simple.h */,
+				D02A290B1DAB1DAA005406DD /* UIAlertController+Simple.m */,
+				D02A29101DAB3F24005406DD /* KTScanPopView.h */,
+				D02A29111DAB3F24005406DD /* KTScanPopView.m */,
+				D02A29151DAB690A005406DD /* KTPreviewLayerView.h */,
+				D02A29161DAB690A005406DD /* KTPreviewLayerView.m */,
+			);
+			path = KTQRCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +246,7 @@
 				TargetAttributes = {
 					D02A28CA1DAB1713005406DD = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2536D3J6MP;
 						ProvisioningStyle = Automatic;
 					};
 					D02A28E31DAB1714005406DD = {
@@ -249,6 +289,8 @@
 				D02A28DE1DAB1714005406DD /* LaunchScreen.storyboard in Resources */,
 				D02A28DB1DAB1714005406DD /* Assets.xcassets in Resources */,
 				D02A28D91DAB1714005406DD /* Main.storyboard in Resources */,
+				D02A29141DAB58EA005406DD /* KTQRCode.bundle in Resources */,
+				D02A29031DAB17AF005406DD /* KTQRCode.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02A29171DAB690A005406DD /* KTPreviewLayerView.m in Sources */,
 				D02A28D61DAB1714005406DD /* ViewController.m in Sources */,
 				D02A28D31DAB1714005406DD /* AppDelegate.m in Sources */,
+				D02A290C1DAB1DAA005406DD /* UIAlertController+Simple.m in Sources */,
+				D02A29061DAB17D1005406DD /* KTQRCodeController.m in Sources */,
+				D02A29121DAB3F24005406DD /* KTScanPopView.m in Sources */,
 				D02A28D01DAB1713005406DD /* main.m in Sources */,
+				D02A29091DAB17F4005406DD /* KTQRCodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -412,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2536D3J6MP;
 				INFOPLIST_FILE = KTQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ovt.KTQRCode;
@@ -435,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2536D3J6MP;
 				INFOPLIST_FILE = KTQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ovt.KTQRCode;
@@ -507,6 +556,7 @@
 				D02A28FA1DAB1714005406DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D02A28FB1DAB1714005406DD /* Build configuration list for PBXNativeTarget "KTQRCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +565,7 @@
 				D02A28FD1DAB1714005406DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D02A28FE1DAB1714005406DD /* Build configuration list for PBXNativeTarget "KTQRCodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +574,7 @@
 				D02A29001DAB1714005406DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

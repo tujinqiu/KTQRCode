@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4gj-5a-dYd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Code Controller-->
+        <scene sceneID="sRx-JV-aOd">
+            <objects>
+                <navigationController id="4gj-5a-dYd" customClass="KTQRCodeController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kfv-jr-6sO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="w4i-uc-nQ5" kind="relationship" relationship="rootViewController" id="jg9-KT-xVE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YSq-A8-RQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-334" y="125"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="7VL-9J-Ugb">
+            <objects>
+                <viewController id="w4i-uc-nQ5" customClass="KTQRCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ihL-iJ-og3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hfk-9N-siJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KpM-mu-faD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibk-eH-2wp" customClass="KTPreviewLayerView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hfk-9N-siJ" firstAttribute="top" secondItem="ibk-eH-2wp" secondAttribute="bottom" id="Tc6-Am-g4b"/>
+                            <constraint firstItem="ibk-eH-2wp" firstAttribute="leading" secondItem="KpM-mu-faD" secondAttribute="leading" id="VoG-mN-Zo3"/>
+                            <constraint firstAttribute="trailing" secondItem="ibk-eH-2wp" secondAttribute="trailing" id="abG-bi-sXd"/>
+                            <constraint firstItem="ibk-eH-2wp" firstAttribute="top" secondItem="ihL-iJ-og3" secondAttribute="bottom" id="d9T-s2-7Ox"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="t8X-uZ-TBX">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="01X-iO-sRA">
+                            <connections>
+                                <action selector="tapCancelButton:" destination="w4i-uc-nQ5" id="h6r-xM-b5B"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="相册选取二维码" id="cSB-eJ-Ogg">
+                            <connections>
+                                <action selector="tapAlbumQRCodeButton:" destination="w4i-uc-nQ5" id="dW4-qK-X8P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="previewLayerView" destination="ibk-eH-2wp" id="tdF-o7-kqB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oys-U9-KlZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="503" y="125"/>
+        </scene>
+    </scenes>
+</document>
